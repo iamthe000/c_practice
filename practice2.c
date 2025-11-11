@@ -1,6 +1,8 @@
 #include <stdio.h>
 int x;
 int likeNumber;
+int count;
+int JesusNumber;
 
 int main(void){
     x = 10;
@@ -38,6 +40,26 @@ int main(void){
     scanf("%s",name);
     printf("hello %s!\n",name);
 
+    count = 0;
+    while (count < likeNumber)
+    {
+        printf("ひつじが%d匹\n",count + 1);
+        count ++;
+    }
+
+    printf("何回祈りますか？");
+    scanf("%d", &JesusNumber);
+    if(JesusNumber <= 0){
+        printf("WTF!?\n");
+    }
+    else{
+        for (size_t i = 0; i < JesusNumber; i++)
+        //このsize_tには負の数(マイナスの値)が入らないから、iをintなどではなくsize_tで置くことでエラーを予防している
+        {
+            printf("oh my god!");
+        }
+        printf("\n");
+    }
 
     return 0;
 }
