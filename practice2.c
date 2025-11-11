@@ -1,10 +1,10 @@
 #include <stdio.h>
-int x;
-int likeNumber;
-int count;
-int JesusNumber;
-
 int main(void){
+    int x;
+    int likeNumber;
+    int count;
+    int JesusNumber;
+
     x = 10;
     if(x == 9 || x == 10){
         printf("x is 10\n");
